@@ -1,5 +1,6 @@
 /* Total Profit */
 
+//Pull profit into new array and reduce, adding together all values
 let profitArray = cars.map(sale => sale.gross_profit)
 let totalProfit = profitArray.reduce((total, sale) => total + sale)
 
@@ -8,6 +9,7 @@ document.querySelector("#totalProfit").textContent = totalProfit.toLocaleString(
 
 /* Month with most sales */
 
+// Pull the months from purchase_date into new array and reduce into an object that counts the months
 let monthsArray = cars.map(date => date.purchase_date.slice(5,7))
 
 let countedMonths = monthsArray.reduce((accumulator, current) => {
@@ -15,8 +17,10 @@ let countedMonths = monthsArray.reduce((accumulator, current) => {
   return accumulator
 }, {})
 
+// Loop through counted months object's keys and find the one with most sales
 let mostSalesMonth = Object.keys(countedMonths).reduce((a,b) => countedMonths[a] > countedMonths[b] ? a : b)
 
+//Convert number to month name and output to DOM
 let month = new Date("2017", mostSalesMonth - 1)
 month = month.toLocaleString("en-US", {month: "long"})
 
@@ -32,7 +36,7 @@ let agentSales = cars.reduce((agents, current) => {
   return agents
 }, {})
 
-// loop through keys in agentSales
+// loop through keys in agentSales to find agent with most sales
 let agentMost = Object.keys(agentSales).reduce((a,b) => agentSales[a] > agentSales[b] ? a : b)
 
 document.querySelector("#mostSales").textContent = agentMost.split("_").join(" ")
