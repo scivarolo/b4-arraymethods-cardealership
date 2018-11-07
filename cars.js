@@ -618,7 +618,7 @@ let cars = [
     "sales_id": "b7a59c5e-c22e-4307-b382-3b32b271ad39",
     "sales_agent": {
       "mobile": "489.021.2300",
-      "last_name": "O\"Kon",
+      "last_name": "O'Kon",
       "first_name": "Al",
       "email": "about64@hotmail.com"
     },
@@ -807,7 +807,7 @@ let cars = [
     "sales_id": "b7a59c5e-c22e-4307-b382-3b32b271ad39",
     "sales_agent": {
       "mobile": "489.021.2300",
-      "last_name": "O\"Kon",
+      "last_name": "O'Kon",
       "first_name": "Al",
       "email": "about64@hotmail.com"
     },
@@ -870,7 +870,7 @@ let cars = [
     "sales_id": "b7a59c5e-c22e-4307-b382-3b32b271ad39",
     "sales_agent": {
       "mobile": "489.021.2300",
-      "last_name": "O\"Kon",
+      "last_name": "O'Kon",
       "first_name": "Al",
       "email": "about64@hotmail.com"
     },
